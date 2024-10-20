@@ -1,5 +1,2 @@
-<app-project-card-list title="List of repos">
-  @for (repo of repos; track repo.name) {
-    <app-project-card card [repoData]="repo"></app-project-card>
-  }
+<app-project-card-list [repos]="repos" title="List of repos">
 </app-project-card-list>
