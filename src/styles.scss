@@ -1,6 +1,4 @@
 @use '@angular/material' as mat;
-@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
-@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
 
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
@@ -10,6 +8,7 @@
 // have to load a single css file for Angular Material in your app.
 // Be sure that you only ever include this mixin once!
 @include mat.core();
+
 
 // Define the theme object.
 $portproj-theme: mat.define-theme((
@@ -38,5 +37,11 @@ $portproj-theme: mat.define-theme((
 // @include mat.color-variants-backwards-compatibility($portproj-theme);
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
+html, body { 
+  height: 100%;
+  width: 100%;
+  background: rgb(2,0,31);
+  background: linear-gradient(90deg, rgba(2,0,31,1) 0%, rgba(12,12,113,1) 31%, rgba(16,72,129,1) 57%, rgba(14,102,136,1) 77%, rgba(6,105,131,1) 87%, rgba(0,65,78,1) 100%);
+  background-size: cover;
+}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

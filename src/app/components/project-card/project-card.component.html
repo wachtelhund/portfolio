@@ -4,7 +4,7 @@
       <img src="assets/github/github-mark.png" alt="GitHub Logo" width="40"> <!-- GitHub logo -->
     </div>
     <mat-card-title>{{ repoData()?.name }}</mat-card-title>
-    <mat-card-subtitle> Created: {{ repoData()?.created_at }}</mat-card-subtitle>
+    <mat-card-subtitle> Created: {{ repoData()?.created_at | date }}</mat-card-subtitle>
   </mat-card-header>
   <mat-card-content>
     <p>{{ repoData()?.description }}</p>

@@ -1,7 +1,5 @@
-<owl-carousel-o [options]="customOptions">
-    @for (repo of repos(); track repo.name) {
-        <ng-template carouselSlide>
-            <app-project-card [repoData]="repo"></app-project-card>
-        </ng-template>  
-    }
-</owl-carousel-o>
+<div class="container">
+        @for (repo of repos(); track repo.name) {
+                <app-project-card [repoData]="repo"></app-project-card>
+        }
+</div>
