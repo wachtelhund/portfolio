@@ -1,0 +1,20 @@
+.example-card {
+  width: 600px;
+  height: 250px;
+}
+
+.example-header-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+mat-card-title, mat-card-subtitle {
+  text-align: left;
+}
+
+mat-card-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: auto;
+}

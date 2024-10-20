@@ -1,0 +1,11 @@
+<div class="carousel-container">
+  <button mat-fab class="scroll-btn left" (click)="scrollLeft()"><mat-icon>arrow_back</mat-icon></button>
+
+  <div #carousel class="carousel">
+    <div class="repos">
+      <ng-content select="[card]"></ng-content>
+    </div>
+  </div>
+
+  <button mat-fab class="scroll-btn right" (click)="scrollRight()"><mat-icon>arrow_forward</mat-icon></button>
+</div>
